@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Favicons Icon -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <title>SSLCOMMERZ Invoice</title>
+  <!-- Mobile Specific -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- CSS Style -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="account-body accountbg">
+  <!-- Log In page -->
+  <div class="container-fluid p-0">
+    <!-- login page start-->
+    <div class="row authentication-main">
+        <div class="col-xl-5 col-12">
+          <div class="auth-innerright">
+            <div class="authentication-box">
+              <div class="card bg-authentication mb-0">
+                <div class="row m-0">
+                  <!-- left section-login -->
+                  <div class="col-12 px-0">
+                    <div class="card disable-rounded-right mb-0 h-100 d-flex justify-content-center">
+                      <div class="card-header">
+                        <div class="card-title text-center my-5">
+                          <!-- <img class="img-fluid" src="images/banner.jpg" alt=""/> -->
+                          <img class="img-fluid right_logo" src="images/logo.png" alt="logo">
+                        </div>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-body">
+                          <div class="text-center">
+                            <h1 class="text-success">Transaction Successful!</h1>
+                            <span>Payment Info</span>
+                            <p>Pay with VISA ( 4321 **** **** 0086 )</p>
+                            <h4>Amount: <span>6339 TK.</span></h4>
+                          </div>
+                        </div>
+                        <div class="left_footer text-center">
+                          <p class="mb-0 border-top pt-3">All rights reserved <a href="#">BataBD</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- login page end-->
+    <!--end row-->
+  </div>
+  <!--end container--><!-- End Log In page --><!-- jQuery  -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script type="text/javascript">
+  $( document ).ready(function() {
+    $(".select2").select2({ width: "100%" });
+    $('.minus').click(function () {
+			var $input = $(this).parent().find('input');
+			var count = parseInt($input.val()) - 1;
+			count = count < 1 ? 1 : count;
+			$input.val(count);
+			$input.change();
+			return false;
+		});
+		$('.plus').click(function () {
+			var $input = $(this).parent().find('input');
+			$input.val(parseInt($input.val()) + 1);
+			$input.change();
+			return false;
+		});
+  });
+  </script>
+</body>
+</html>
