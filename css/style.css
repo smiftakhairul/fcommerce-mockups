@@ -504,6 +504,30 @@ label {
   max-height: 280px;
   overflow-x: auto;
 }
+.pending_order {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 0 0;
+  border-radius: 0;
+  border: 0 none;
+}
+.pending_order a.btn {
+  border-radius: 0;
+  border-top-right-radius: 12px;
+  color: var(--main-color)!important;
+}
+.pending_order a.btn-soft-warning:hover {
+}
+.btn-soft-warning {
+  background-color: rgba(255,159,67,0.18);
+  color: #ff9f43;
+}
+.btn-square {
+  border-radius: 0;
+}
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1100px;
